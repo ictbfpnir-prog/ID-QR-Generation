@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Sign in - BFP-NIR ID System</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; background: #f2f4f7; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+  .box { background: white; padding: 32px 36px; border-radius: 12px; box-shadow: 0 1px 6px rgba(0,0,0,0.12); width: 320px; }
+  h1 { font-size: 1.15rem; margin: 0 0 18px; color: #17223b; }
+  label { display: block; font-size: 0.8rem; color: #556; margin-top: 12px; }
+  input { width: 100%; padding: 8px; margin-top: 4px; border-radius: 6px; border: 1px solid #ccc; box-sizing: border-box; }
+  button { width: 100%; margin-top: 18px; background: #1a1a2e; color: white; border: none; padding: 10px; border-radius: 6px; cursor: pointer; }
+  #error { color: #b71c1c; font-size: 0.85rem; margin-top: 10px; display: none; }
+</style>
+</head>
+<body>
+  <form class="box" id="loginForm">
+    <h1>BFP-NIR ID System — Sign in</h1>
+    <label>Username</label>
+    <input name="username" autocomplete="username" required />
+    <label>Password</label>
+    <input name="password" type="password" autocomplete="current-password" required />
+    <div id="error"></div>
+    <button type="submit">Sign in</button>
+  </form>
+  <script src="/login.js"></script>
+</body>
+</html>
